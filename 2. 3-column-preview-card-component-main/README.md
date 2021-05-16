@@ -15,7 +15,7 @@ Users should be able to:
 - Desktop View
 ![challenge 2](https://user-images.githubusercontent.com/38320169/118414712-71956100-b6d0-11eb-8b86-e8c52caf175b.png)
 - Mobile View
-![mobile](https://user-images.githubusercontent.com/38320169/118414752-9ab5f180-b6d0-11eb-8b07-06df06a5895c.png)
+![mobile](https://user-images.githubusercontent.com/38320169/118415000-00ef4400-b6d2-11eb-9cc7-63e978f23140.jpg)
 
 ### Links
 
