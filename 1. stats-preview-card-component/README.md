@@ -51,7 +51,7 @@ Hope yo see my code and give your feedback. Thanks!
 
 ## Author
 
-- Website - [Personal Web](https://priopambudi.github.io/personal-web)
+- Website - [dev_monkey](https://priopambudi.github.io/personal-web)
 - Frontend Mentor - [@priopambudi](https://www.frontendmentor.io/profile/priopambudi)
 
 ## Acknowledgments
