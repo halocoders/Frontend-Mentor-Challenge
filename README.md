@@ -1,14 +1,7 @@
-# Frontend Mentor - Stats preview card component
-
-![Screenshot_2021-05-16 Frontend Mentro Challenge 1](https://user-images.githubusercontent.com/38320169/118381644-31be7300-b617-11eb-94dc-d61fa0c96e90.png)
-
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a basic understanding of HTML and CSS.**
 
 ## The challenge
 
