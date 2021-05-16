@@ -12,9 +12,9 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
---Desktop View
+- Desktop View
 ![challenge 2](https://user-images.githubusercontent.com/38320169/118414712-71956100-b6d0-11eb-8b86-e8c52caf175b.png)
---Mobile View
+- Mobile View
 ![mobile](https://user-images.githubusercontent.com/38320169/118414752-9ab5f180-b6d0-11eb-8b07-06df06a5895c.png)
 
 ### Links
