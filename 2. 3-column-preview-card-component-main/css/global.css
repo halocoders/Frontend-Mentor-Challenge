@@ -20,11 +20,13 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
     background-color: var(--light-gray);
-    padding: 4em 0;
+    padding: 4em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .container {
@@ -77,6 +79,13 @@ button {
     font-family: 'Lexend Deca';
     font-size: 0.95rem;
     font-weight: 400;
+    border: 2px solid var(--light-gray);
+    transition: 200ms;
+}
+
+button:hover {
+    background: none;
+    color: white !important;
 }
 
 .sedan button {
@@ -87,5 +96,22 @@ button {
 }
 .luxury button {
     color: var(--very-dark-cyan);
+}
+
+@media only screen and (min-width: 1040px) {
+    .container {
+        flex-direction: row;
+        max-width: 1200px;
+    }
+    .container > div {
+        width: 355px;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .txt {
+        margin-bottom: 100px;
+        width: 90%;
+    }
 }
 
