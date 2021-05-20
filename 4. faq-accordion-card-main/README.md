@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot_2021-05-20 Frontend Mentor FAQ Accordion Card](https://user-images.githubusercontent.com/38320169/118920107-ee8a3a00-b95f-11eb-8b5a-8e8de309dac8.pn
 
 ### Links
 
-- Solution URL: [FrontendMentor](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/priopambudi/Frontend-Mentor-Challenge)
+- Live Site URL: [Netlify](https://faq-accordion-dev-monkey.netlify.app/)
 
 ## My process
 
@@ -42,34 +42,14 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+I'm quite confused about how to position the box so it can be responsive. So I made it a fixed size to the card. Because of my limitations on javascript, the accordion I can make is simple. But enough to help me understand javascript better.
 
 ## Author
 
-- Website - [Dev Monkey](https://www.your-site.com)
-- Frontend Mentor - [@priopambudi](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Dev Monkey](https://priopambudi.github.io/personal-web)
+- Frontend Mentor - [@priopambudi](https://www.frontendmentor.io/profile/priopambudi)
 
 ## Acknowledgments
 
