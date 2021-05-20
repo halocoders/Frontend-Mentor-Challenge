@@ -17,10 +17,12 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      color: white;
+      margin-top: 40px;
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: inherit;
     }
   </style>
 </head>
@@ -102,23 +104,24 @@
             </div>
           </div>
         </div>
-
       </div>
-
-
-
-
-
-
     </div>
   </section>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Prio Pambudi</a>.
   </div>
 
-  <script src="./main.js"></script>
+  <script type="text/javascript">
+    const accordion = document.getElementsByClassName('accordion__item');
+
+    for (i = 0; i < accordion.length; i++) {
+      accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active');
+      })
+    }
+  </script>
 </body>
 
 </html>

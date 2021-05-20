@@ -8,6 +8,7 @@
     --gradient-violet: hsl(273, 75%, 66%);
     --gradient-blue: hsl(240, 73%, 65%);
     --divider-blue: hsl(240, 5%, 91%);
+    --shadow: hsla(238, 29%, 16%, 0.322);
 }
 
 *, *::before, *::after {
@@ -39,6 +40,7 @@ body {
     background-size: max(240px);
     background-position: center 0%;
     position: relative;
+    box-shadow: 0 28px 21px var(--shadow);
 }
 
 .card__box {
@@ -76,8 +78,9 @@ body {
     margin-top: 1rem;
 }
 .accordion__item {
-    padding: 1.2rem 0;
+    padding: 1rem 0;
     border-bottom: 1px solid var(--divider-blue);
+    cursor: pointer;
 }
 .accordion__question {
     position: relative;
@@ -97,13 +100,23 @@ body {
 .accordion__collapse {
     display: block;
     overflow: hidden;
-    height: 70px;
+    height: 0px;
+    transition: 300ms;
 }
 .accordion__content {
-    padding-top: 1.2rem;
+    padding: .7rem 0;
     font-size: .7rem;
     line-height: 1.5em;
     width: 90%;
+}
+.accordion__item.active .accordion__collapse {
+    height: auto;
+}
+.accordion__item.active .accordion__question p {
+    font-weight: 600;
+}
+.accordion__item.active .accordion__question svg {
+    transform: rotate(180deg);
 }
 
 
@@ -111,10 +124,16 @@ body {
     .card {
         width: 30rem;
     }
+    .card__box {
+        left: 98px;
+    }
 }
 
 
 @media (min-width: 56rem) {
+    body {
+        padding: unset;
+    }
     .card {
         display: flex;
         margin: 6rem auto;
@@ -125,6 +144,7 @@ body {
         position: relative;
         width: unset;
         max-width: 56rem;
+        
     }
 
     img.card__box {
@@ -136,7 +156,7 @@ body {
         transform: translateX(-48%) translateY(-48%);
     }
     
-    .card__image, .card__content {
+    .card__image, .card__content { 
         flex: 1;
     }
 
@@ -144,12 +164,20 @@ body {
         align-items: center;
         justify-content: unset;
         overflow: hidden;
+        
     }
 
     .card__image img {
         max-width: 25rem;
         transform: translateX(-4rem);
+        position: unset;
     }
-    
+    .card__content {
+        padding-top: 2rem;
+    }
+
+    .attribution {
+        margin-top: unset;
+    }
     
 }
