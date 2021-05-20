@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+:root {
+    --text-blue: hsl(238, 29%, 16%);
+    --text-dkblue: hsl(240, 6%, 50%);
+    --text-vdkblue: hsl(237, 12%, 33%);
+    --text-red: hsl(14, 88%, 65%);
+    --gradient-violet: hsl(273, 75%, 66%);
+    --gradient-blue: hsl(240, 73%, 65%);
+    --divider-blue: hsl(240, 5%, 91%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(var(--gradient-violet),var(--gradient-blue));
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    width: 20rem;
+    height: auto;
+    background-image: url('./images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: max(240px);
+    background-position: center 0%;
+    position: relative;
+}
+
+.card__box {
+    display: block;
+    position: absolute;
+    top: -54px;
+    max-width: 120px;
+    left: 20px;
+    z-index: 1;
+}
+
+.card__image {
+    display: flex;
+    justify-content: center;
+}
+
+.card__image img {
+    width: 100%;
+    height: auto;
+    max-width: 15rem;
+    top: -110px;
+    position: absolute;
+}
+
+.card__content {
+    padding: 8rem 1.8rem 1.8rem;
+}
+
+.card__content h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.accordion {
+    margin-top: 1rem;
+}
+.accordion__item {
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--divider-blue);
+}
+.accordion__question {
+    position: relative;
+    cursor: pointer;
+    padding: .4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion__question p {
+    font-size: .75rem;
+}
+.accordion__question:hover {
+    color: var(--text-red);
+}
+
+.accordion__collapse {
+    display: block;
+    overflow: hidden;
+    height: 70px;
+}
+.accordion__content {
+    padding-top: 1.2rem;
+    font-size: .7rem;
+    line-height: 1.5em;
+    width: 90%;
+}
+
+
+@media (min-width: 550px) {
+    .card {
+        width: 30rem;
+    }
+}
+
+
+@media (min-width: 56rem) {
+    .card {
+        display: flex;
+        margin: 6rem auto;
+        background-image: url('./images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position: -13% center;
+        position: relative;
+        width: unset;
+        max-width: 56rem;
+    }
+
+    img.card__box {
+        display: block;
+        position: absolute;
+        top: 57%;
+        left: 0;
+        z-index: 1;
+        transform: translateX(-48%) translateY(-48%);
+    }
+    
+    .card__image, .card__content {
+        flex: 1;
+    }
+
+    .card__image {
+        align-items: center;
+        justify-content: unset;
+        overflow: hidden;
+    }
+
+    .card__image img {
+        max-width: 25rem;
+        transform: translateX(-4rem);
+    }
+    
+    
+}
