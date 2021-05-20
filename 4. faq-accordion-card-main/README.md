@@ -26,7 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot_2021-05-20 Frontend Mentor FAQ Accordion Card](https://user-images.githubusercontent.com/38320169/118920107-ee8a3a00-b95f-11eb-8b5a-8e8de309dac8.pn
+![faq](https://user-images.githubusercontent.com/38320169/118920461-afa8b400-b960-11eb-93eb-b667bd1c8c52.png)
+>>>>>>> 4e0bf8e5189c109df5d0bf0eea36f8cf1580c3e9
 
 ### Links
 
