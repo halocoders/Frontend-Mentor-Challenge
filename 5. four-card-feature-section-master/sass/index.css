@@ -29,25 +29,207 @@ body {
   background-color: #fafafa;
 }
 
-body main {
+main {
   width: 100%;
+  padding: 6rem 2rem;
 }
 
-body main header {
+main header {
   text-align: center;
   color: #4c4e61;
+  margin-bottom: 4rem;
 }
 
-body main header h1 {
+main header h1 {
   font-size: 1.4rem;
   font-weight: 400;
 }
 
-body main header p {
-  width: 80%;
+main header p {
+  width: 90%;
   margin: auto;
   color: #a3a5ae;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+  main header p {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  main header p {
+    max-width: 40%;
+  }
+}
+
+main .content {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  main .content {
+    max-width: 1050px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .content {
+    max-width: 100%;
+  }
+  main .content .container__card:nth-child(1) {
+    top: 8rem;
+  }
+  main .content .container__card.container__card:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    top: 8rem;
+  }
+  main .content .container__card.container__card:nth-child(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+main .content .container__card {
+  background-color: white;
+  margin: auto;
+  -webkit-box-shadow: 4px 10px 16px rgba(126, 127, 129, 0.164);
+          box-shadow: 4px 10px 16px rgba(126, 127, 129, 0.164);
+  padding: 1.7rem 1.5rem 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #4c4e61;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 350px;
+}
+
+@media (min-width: 768px) {
+  main .content .container__card {
+    width: 21rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main .content .container__card {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+main .content .container__card p.title__card {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.3em;
+}
+
+main .content .container__card p.content__card {
+  color: #a3a5ae;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+main .content .container__card .icon__card {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: end;
+          justify-content: end;
+  -ms-flex-pack: end;
+}
+
+main .content .container__card:nth-child(1),
+main .content .container__card:nth-child(2),
+main .content .container__card:nth-child(3),
+main .content .container__card:nth-child(4) {
+  position: relative;
+}
+
+main .content .container__card:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #45d3d3;
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main .content .container__card:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #ea5353;
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main .content .container__card:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #fcaf4a;
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main .content .container__card:nth-child(4)::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #549ef2;
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1300px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

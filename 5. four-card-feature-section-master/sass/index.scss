@@ -8,6 +8,47 @@ $blue: hsl(212, 86%, 64%);
 $dark-blue: hsl(234, 12%, 34%);
 $grayish-blue: hsl(229, 6%, 66%);
 $light-blue: hsl(0, 0%, 98%);
+$shadow: hsla(220, 1%, 50%, 0.164);
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
 
 *,
 *::before,
@@ -27,24 +68,161 @@ body {
   align-items: center;
   width: 100%;
   background-color: $light-blue;
+}
 
-  main {
-    width: 100%;
+main {
+  width: 100%;
+  padding: 6rem 2rem;
 
-    header {
-      text-align: center;
-      color: $dark-blue;
-      h1 {
-        font-size: 1.4rem;
-        font-weight: 400;
+  header {
+    text-align: center;
+    color: $dark-blue;
+    margin-bottom: 4rem;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+    p {
+      width: 90%;
+      margin: auto;
+      color: $grayish-blue;
+      font-size: 0.85rem;
+      margin-top: 1em;
+      @include md {
+        max-width: 50%;
       }
-      p {
-        width: 80%;
-        margin: auto;
-        color: $grayish-blue;
-        font-size: 0.9rem;
-        margin-top: 1em;
+      @include lg {
+        max-width: 40%;
       }
     }
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: auto;
+
+    @include lg {
+      max-width: 1050px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include xl {
+      max-width: 100%;
+      .container__card:nth-child(1) {
+        top: 8rem;
+      }
+      .container__card.container__card:nth-child(4) {
+        order: 3;
+        top: 8rem;
+      }
+      .container__card.container__card:nth-child(3) {
+        order: 4;
+      }
+    }
+
+    .container__card {
+      background-color: white;
+      margin: auto;
+      box-shadow: 4px 10px 16px $shadow;
+      padding: 1.7rem 1.5rem 1.5rem;
+      border-radius: 10px;
+      overflow: hidden;
+      color: $dark-blue;
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+
+      @include md {
+        width: 21rem;
+      }
+
+      @include lg {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      p.title__card {
+        font-weight: 600;
+        font-size: 1.3rem;
+        margin-bottom: 0.3em;
+      }
+
+      p.content__card {
+        color: $grayish-blue;
+        font-size: 0.8rem;
+        line-height: 1.8em;
+        margin-bottom: 2rem;
+        max-width: 90%;
+      }
+
+      .icon__card {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        justify-content: end;
+        -ms-flex-pack: end;
+      }
+    }
+    .container__card:nth-child(1),
+    .container__card:nth-child(2),
+    .container__card:nth-child(3),
+    .container__card:nth-child(4) {
+      position: relative;
+    }
+
+    .container__card:nth-child(1)::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-color: $cyan;
+      width: 100%;
+      height: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .container__card:nth-child(2)::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-color: $red;
+      width: 100%;
+      height: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .container__card:nth-child(3)::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-color: $orange;
+      width: 100%;
+      height: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .container__card:nth-child(4)::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-color: $blue;
+      width: 100%;
+      height: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+  @include xl {
+    max-width: 1300px;
   }
 }
