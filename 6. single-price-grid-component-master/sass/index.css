@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0 2rem;
+  }
+}
+
+.container__card {
+  margin: auto;
+  max-width: 310px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.container__card .content,
+.container__card .price,
+.container__card .why {
+  padding: 1.5rem;
+}
+
+.container__card .title {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.container__card .content {
+  background-color: white;
+}
+
+.container__card .content h1 {
+  font-size: 1.2rem;
+  color: #2ab2af;
+}
+
+.container__card .content p {
+  color: #c0df34;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  margin-top: 1.5em;
+  margin-bottom: 1.3em;
+  line-height: 1.3em;
+}
+
+.container__card .content span {
+  font-size: 0.85rem;
+  color: #98a6bd;
+  line-height: 1.7em;
+}
+
+.container__card .price {
+  background-color: #2ab2af;
+  color: white;
+}
+
+.container__card .price .price__month {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7em;
+  margin-top: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.container__card .price .price__month span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.container__card .price .price__content {
+  margin-bottom: 2rem;
+}
+
+.container__card .price a {
+  width: 100%;
+  background-color: #c0df34;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 1.1em 0;
+  border-radius: 7px;
+  -webkit-box-shadow: 2px 6px 16px rgba(33, 125, 123, 0.418);
+          box-shadow: 2px 6px 16px rgba(33, 125, 123, 0.418);
+}
+
+.container__card .why {
+  background-color: #4bbebc;
+  color: white;
+}
+
+.container__card .why p {
+  font-size: 0.85rem;
+  margin-top: 1.7em;
+  line-height: 1.5em;
+  width: 70%;
+  margin-bottom: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .container__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 650px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container__card .content,
+  .container__card .price,
+  .container__card .why {
+    padding: 2.3rem;
+  }
+  .container__card .content {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .container__card .price,
+  .container__card .why {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Color
+$cyan: hsl(179, 62%, 43%);
+$cyan-soft: hsl(179, 47%, 52%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+$shadow-button: hsla(179, 58%, 31%, 0.418);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: $light-gray;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+
+  @include md {
+    padding: 0 2rem;
+  }
+}
+
+.container__card {
+  margin: auto;
+  max-width: 310px;
+  border-radius: 7px;
+  overflow: hidden;
+
+  .content,
+  .price,
+  .why {
+    padding: 1.5rem;
+  }
+  .title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .content {
+    background-color: white;
+
+    h1 {
+      font-size: 1.2rem;
+      color: $cyan;
+    }
+    p {
+      color: $bright-yellow;
+      font-weight: 400;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+      margin-top: 1.5em;
+      margin-bottom: 1.3em;
+      line-height: 1.3em;
+    }
+    span {
+      font-size: 0.85rem;
+      color: $grayish-blue;
+      line-height: 1.7em;
+    }
+  }
+  .price {
+    background-color: $cyan;
+    color: white;
+
+    .price__month {
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7em;
+      margin-top: 1.3em;
+      margin-bottom: 0.5em;
+
+      span {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+    }
+    .price__content {
+      margin-bottom: 2rem;
+    }
+    a {
+      width: 100%;
+      background-color: $bright-yellow;
+      color: white;
+      display: block;
+      text-align: center;
+      font-size: 0.9rem;
+      text-decoration: none;
+      padding: 1.1em 0;
+      border-radius: 7px;
+      box-shadow: 2px 6px 16px $shadow-button;
+    }
+  }
+  .why {
+    background-color: $cyan-soft;
+    color: white;
+
+    p {
+      font-size: 0.85rem;
+      margin-top: 1.7em;
+      line-height: 1.5em;
+      width: 70%;
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+
+.container__card {
+  @include md {
+    display: flex;
+    max-width: 650px;
+    flex-wrap: wrap;
+
+    .content,
+    .price,
+    .why {
+      padding: 2.3rem;
+    }
+
+    .content {
+      flex-basis: 100%;
+    }
+
+    .price,
+    .why {
+      flex-basis: 50%;
+    }
+  }
+}
