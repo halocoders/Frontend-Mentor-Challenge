@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+$vdmagenta: hsl(300, 43%, 22%);
+$pink: hsl(333, 80%, 67%);
+$dark-magenta: hsl(303, 10%, 53%);
+$light-magenta: hsl(300, 24%, 96%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem 1.5rem;
+  @include md {
+    padding: 7rem 1.5rem;
+  }
+}
+
+.container {
+  max-width: 1124px;
+  margin: auto;
+}
+
+.head-content {
+  .title-content {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1em;
+      color: $vdmagenta;
+    }
+    p {
+      font-size: 0.9rem;
+      padding-top: 2em;
+      line-height: 1.6em;
+      padding-bottom: 2em;
+      color: $dark-magenta;
+    }
+  }
+
+  .rate-container {
+    padding: 0.5rem 0;
+    width: 100%;
+
+    .rating {
+      background: $light-magenta;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+      margin-bottom: 0.9rem;
+
+      .star img {
+        margin: 0 0.1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: $vdmagenta;
+        margin-top: 0.6rem;
+      }
+    }
+  }
+
+  @include lg {
+    display: flex;
+
+    .title-content {
+      text-align: left;
+      margin: unset;
+      flex-basis: 50%;
+
+      h1 {
+        max-width: 9em;
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+        max-width: 10em;
+      }
+    }
+
+    .rate-container {
+      flex-basis: 50%;
+      padding: unset;
+    }
+  }
+}
+
+.social-proof {
+  padding: 1rem 0;
+
+  .card-review {
+    background-color: $vdmagenta;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    color: white;
+    padding: 3rem 2rem 2rem 2rem;
+    max-width: 580px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .head-review {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .about {
+        padding-left: 1.5rem;
+
+        .name {
+          font-size: 0.8rem;
+          font-weight: 700;
+          margin-bottom: 0.1em;
+        }
+        span {
+          font-size: 0.8rem;
+          color: $pink;
+          opacity: 0.7;
+        }
+      }
+    }
+
+    p.quote {
+      font-size: 0.8rem;
+      line-height: 1.8em;
+      padding-top: 2em;
+    }
+  }
+}

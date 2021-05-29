@@ -12,7 +12,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -38,7 +37,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- SCSS
 - Mobile-first workflow
 
 ### What I learned
@@ -61,8 +60,7 @@ const proudOfThisFunc = () => {
 }
 ```
 
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Personal Web](https://priopambudi.github.io/personal-web/)
+- Frontend Mentor - [@priopambudi](https://www.frontendmentor.io/profile/priopambudi)
