@@ -127,14 +127,40 @@ main {
       }
 
       p {
-        font-size: 0.85rem;
-        max-width: 10em;
+        font-size: 0.8rem;
+        max-width: 30em;
+        padding-top: 1em;
       }
     }
 
     .rate-container {
       flex-basis: 50%;
       padding: unset;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 27rem;
+        gap: 2rem;
+        padding: 0.9rem 1rem;
+
+        p {
+          margin: unset;
+        }
+      }
+      .rating:nth-child(1) {
+        margin-left: 3rem;
+      }
+      .rating:nth-child(2) {
+        margin-left: 7rem;
+      }
+      .rating:nth-child(3) {
+        margin-left: 11rem;
+      }
     }
   }
 }
@@ -182,6 +208,26 @@ main {
       font-size: 0.8rem;
       line-height: 1.8em;
       padding-top: 2em;
+    }
+  }
+
+  @include lg {
+    display: flex;
+    gap: 0.8rem;
+    padding-top: 3rem;
+    justify-content: space-between;
+
+    .card-review {
+      max-width: 350px;
+      height: 225px;
+      margin: unset;
+      padding: 2rem;
+    }
+    .card-review:nth-child(2) {
+      margin-top: 1.5rem;
+    }
+    .card-review:nth-child(3) {
+      margin-top: 3rem;
     }
   }
 }
