@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![ss](https://user-images.githubusercontent.com/38320169/120068668-18ec9d80-c0ac-11eb-8813-11e2ad470622.png)
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/priopambudi/Frontend-Mentor-Challenge)
+- Live Site URL: [Netlify](https://social-proofs-dev-monkey.netlify.app/)
 
 ## My process
 
@@ -42,23 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+If your monitor is HD, set your browser to 80%.
 
 ## Author
 
