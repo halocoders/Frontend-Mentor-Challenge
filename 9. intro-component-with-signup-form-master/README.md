@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![ss](https://user-images.githubusercontent.com/38320169/120492823-9aae3500-c3e4-11eb-84e6-51a213b9dcd5.jpg)
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/priopambudi/Frontend-Mentor-Challenge/tree/main/9.%20intro-component-with-signup-form-master)
+- Live Site URL: [Netlify](https://signup-form-dev-monkey.netlify.app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Learn to make Sign up Form with pure Javascritp and SCSS
 
 ## Author
 
