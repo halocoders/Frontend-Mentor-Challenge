@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ff7a7a;
+  font-family: "Poppins", sans-serif;
+  padding: 5rem 1.4rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  z-index: 10;
+  margin: auto;
+}
+
+main {
+  max-width: 1020px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  margin-top: 1.5rem;
+}
+
+.col-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-title h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .col-title h1 {
+    font-size: 2rem;
+  }
+}
+
+.col-title p {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 1.2em;
+  line-height: 1.7em;
+}
+
+.col-input .try {
+  background-color: #6055a5;
+  color: white;
+  border-radius: 6px;
+  padding: 0.9rem;
+  -webkit-box-shadow: 0 7px 0 rgba(68, 68, 68, 0.37);
+          box-shadow: 0 7px 0 rgba(68, 68, 68, 0.37);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  margin-bottom: 1.5rem;
+}
+
+.col-input .try p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.col-input .try:hover {
+  background-color: white;
+  color: #6055a5;
+  cursor: default;
+}
+
+.col-input .input-container {
+  background-color: white;
+  border-radius: 6px;
+  padding: 2rem;
+  -webkit-box-shadow: 0 7px 0 rgba(68, 68, 68, 0.37);
+          box-shadow: 0 7px 0 rgba(68, 68, 68, 0.37);
+}
+
+.col-input .input-container form .form-input {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.col-input .input-container form .form-input input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid grey;
+  letter-spacing: 0.04rem;
+}
+
+.col-input .input-container form .form-input input:focus {
+  border: 1px solid #6055a5;
+}
+
+.col-input .input-container form .form-input *:focus {
+  outline: none;
+}
+
+.col-input .input-container form .form-input label {
+  text-align: right;
+  font-size: 0.6rem;
+  width: 100%;
+  display: block;
+  margin-top: 0.2em;
+  font-style: italic;
+  color: #ff7a7a;
+  visibility: hidden;
+}
+
+.col-input .input-container form .form-input .img-error {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  visibility: hidden;
+}
+
+.col-input .input-container form .form-input .img-success {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  visibility: hidden;
+}
+
+.col-input .input-container form .form-input.error input {
+  border: 1px solid #ff7a7a;
+}
+
+.col-input .input-container form .form-input.error label,
+.col-input .input-container form .form-input.error img.img-error {
+  visibility: visible;
+}
+
+.col-input .input-container form .form-input.success input {
+  border: 1px solid #38cc8c;
+}
+
+.col-input .input-container form .form-input.success img.img-success {
+  visibility: visible;
+}
+
+.col-input .input-container form .form-input.success label,
+.col-input .input-container form .form-input.success img.img-error {
+  visibility: hidden;
+}
+
+.col-input .input-container form button {
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.85rem;
+  padding: 1rem;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  -webkit-box-shadow: 0 6px 0 #2aa26e;
+          box-shadow: 0 6px 0 #2aa26e;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .col-input .input-container form button:hover {
+    position: relative;
+    top: 2px;
+    -webkit-box-shadow: 0 4px 0 #2aa26e;
+            box-shadow: 0 4px 0 #2aa26e;
+  }
+}
+
+.col-input .input-container .term {
+  font-size: 0.6rem;
+  text-align: center;
+  width: 80%;
+  margin-top: 1.8em;
+  margin-right: auto;
+  margin-left: auto;
+  color: grey;
+}
+
+.col-input .input-container .term b {
+  color: #ff7a7a;
+}
+
+p.attribution {
+  font-size: 0.6rem;
+}
+
+p.attribution a {
+  text-decoration: none;
+  color: darkslategrey;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+  main {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .container .col-title {
+    margin-bottom: unset;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .container .col-title h1 {
+    font-size: 2.5rem;
+    line-height: 1.3em;
+  }
+  .container .col-title p {
+    width: 80%;
+  }
+  .container .col-input {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
