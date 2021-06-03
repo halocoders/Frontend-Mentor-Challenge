@@ -41,6 +41,16 @@ function checkInputs() {
   } else {
     setSuccessFor(password);
   }
+
+  if (
+    firstNameValue !== "" &&
+    lastNameValue !== "" &&
+    emailValue !== "" &&
+    isEmail(emailValue) &&
+    passValue !== ""
+  ) {
+    location.reload();
+  }
 }
 
 function setErrorFor(input, message) {

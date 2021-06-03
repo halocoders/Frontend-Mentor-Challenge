@@ -1,0 +1,36 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+/* Variables */
+:root {
+  --desaturatedred: hsl(0, 36%, 70%);
+  --softred: hsl(0, 93%, 68%);
+  --darkgrayishred: hsl(0, 6%, 24%);
+  --redgrayish: #d9cacd;
+  --gr-red-light: 135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%;
+  --gr-red-dark: 135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%;
+}
+
+/* Global style */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  min-height: 100vh;
+  background: url("../assets/img/bg-pattern-desktop.svg"),
+    linear-gradient(var(--gr-red-light));
+  background-repeat: no-repeat;
+}
