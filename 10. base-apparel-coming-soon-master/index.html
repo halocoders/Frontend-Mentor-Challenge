@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/coming.css" />
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -28,16 +29,63 @@
     </style>
   </head>
   <body>
-    We're coming soon - Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. - Email Address
+    <section class="coming">
+      <div class="coming-container container">
+        <div class="coming-wrapper">
+          <header class="coming-header">
+            <img src="./images/logo.svg" alt="logo" />
+          </header>
+          <div class="coming-hero">
+            <picture>
+              <source
+                media="(max-width: 899px)"
+                srcset="./images/hero-mobile.jpg"
+              />
+              <source
+                media="(min-width: 900px)"
+                srcset="./images/hero-desktop.jpg"
+              />
+              <img src="./images/hero-desktop.jpg" alt="woman image" />
+            </picture>
+          </div>
+          <div class="coming-content">
+            <h1 class="coming-heading">
+              We're <br />
+              coming <br />
+              soon
+            </h1>
+            <p class="coming-text">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <form action="#" class="coming-form" id="emailform">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="coming-input"
+                id="email"
+                name="email"
+              />
+              <button
+                type="submit"
+                class="coming-button"
+                form="emailform"
+                value="Submit"
+              ></button>
+            </form>
+            <small class="coming-error"> Please provide a valid email</small>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#" target="_blank">Dev Monkey</a>.
       </p>
     </footer>
   </body>
