@@ -22,6 +22,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -34,8 +35,20 @@ body {
   background: url("../assets/img/bg-pattern-desktop.svg"),
     linear-gradient(var(--gr-red-light));
   background-repeat: no-repeat;
+  padding-bottom: 35px;
 }
 
 .container {
   max-width: 1400px;
+}
+
+@keyframes headingSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

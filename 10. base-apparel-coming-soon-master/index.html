@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/coming.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -50,28 +51,33 @@
           </div>
           <div class="coming-content">
             <h1 class="coming-heading">
-              We're <br />
-              coming <br />
-              soon
+              <span class="coming-anim--1"> We're </span> <br />
+              <span class="coming-span">
+                <span class="coming-anim--2"> coming </span> <br />
+                <span class="coming-anim--3"> soon </span>
+              </span>
             </h1>
             <p class="coming-text">
               Hello fellow shoppers! We're currently building our new fashion
               store. Add your email below to stay up-to-date with announcements
               and our launch deals.
             </p>
-            <form action="#" class="coming-form" id="emailform">
+            <form action="#" class="coming-form" id="emailform" data-form>
               <input
-                type="email"
                 placeholder="Email Address"
                 class="coming-input"
                 id="email"
                 name="email"
+                autocomplete="off"
+                data-input
               />
               <button
                 type="submit"
                 class="coming-button"
                 form="emailform"
                 value="Submit"
+                id="button"
+                data-button
               ></button>
             </form>
             <small class="coming-error"> Please provide a valid email</small>
@@ -88,5 +94,7 @@
         >. Coded by <a href="#" target="_blank">Dev Monkey</a>.
       </p>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
